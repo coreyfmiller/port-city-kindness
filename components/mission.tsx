@@ -2,15 +2,15 @@ import { Eyebrow, HeartRule } from '@/components/shared'
 
 export function Mission() {
   return (
-    <section id="mission" className="scroll-mt-28 px-4 py-20 sm:py-28">
+    <section id="mission" className="scroll-mt-28 px-4 py-16 sm:py-28">
       <div className="mx-auto max-w-3xl text-center">
         <Eyebrow className="justify-center">Our Mission</Eyebrow>
-        <h2 className="mt-5 text-balance font-serif text-4xl leading-[1.1] text-charcoal sm:text-5xl">
+        <h2 className="mt-5 text-balance font-serif text-3xl leading-[1.15] text-charcoal sm:text-5xl sm:leading-[1.1]">
           More than cleaning.{' '}
           <span className="text-rose">A fresh start.</span>
         </h2>
 
-        <div className="mt-8 space-y-6 text-lg leading-relaxed text-charcoal/75">
+        <div className="mt-8 space-y-6 text-base leading-relaxed text-charcoal/75 sm:text-lg">
           <p>
             Life can become overwhelming. Illness, loss, financial hardship,
             family circumstances, or simply falling behind can turn a home into

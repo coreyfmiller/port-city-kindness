@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Heart, Share2, Mail, MapPin } from 'lucide-react'
+import { Heart, Share2, MapPin } from 'lucide-react'
 
 const NAV = [
   { label: 'Our Mission', href: '#mission' },
@@ -9,11 +9,7 @@ const NAV = [
   { label: 'Contact', href: '#contact' },
 ]
 
-const CONTACT = [
-  { icon: Share2, label: 'Facebook', detail: 'facebook.com/portcitykindness' },
-  { icon: Mail, label: 'Email', detail: 'hello@portcitykindness.org' },
-  { icon: MapPin, label: 'Service Area', detail: 'Serving our local community' },
-]
+const FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=61593386040087'
 
 export function SiteFooter() {
   return (
@@ -58,15 +54,25 @@ export function SiteFooter() {
               Connect
             </h3>
             <ul className="mt-4 space-y-3">
-              {CONTACT.map((item) => (
-                <li key={item.label} className="flex items-start gap-2.5">
-                  <item.icon className="mt-0.5 size-4 shrink-0 text-rose" strokeWidth={1.5} aria-hidden="true" />
-                  <span className="text-sm text-charcoal/70">
-                    <span className="sr-only">{item.label}: </span>
-                    {item.detail}
-                  </span>
-                </li>
-              ))}
+              <li className="flex items-start gap-2.5">
+                <Share2 className="mt-0.5 size-4 shrink-0 text-rose" strokeWidth={1.5} aria-hidden="true" />
+                <a
+                  href={FACEBOOK_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-charcoal/70 transition-colors hover:text-rose"
+                >
+                  <span className="sr-only">Facebook: </span>
+                  Follow us on Facebook
+                </a>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <MapPin className="mt-0.5 size-4 shrink-0 text-rose" strokeWidth={1.5} aria-hidden="true" />
+                <span className="text-sm text-charcoal/70">
+                  <span className="sr-only">Service Area: </span>
+                  Serving our local community
+                </span>
+              </li>
             </ul>
           </div>
         </div>

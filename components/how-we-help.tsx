@@ -3,8 +3,8 @@ import { Eyebrow } from '@/components/shared'
 
 const SERVICES = [
   {
-    title: 'Home Cleaning',
-    body: 'Helping restore homes that have become difficult to manage, so they feel calm and comfortable again.',
+    title: 'Home & Fresh Start Cleaning',
+    body: 'Helping restore homes that have become difficult to manage — and helping individuals and families facing major life transitions begin their next chapter with a little more ease.',
     image: '/images/home-cleaning.png',
     alt: 'A freshly cleaned, cozy living room with warm natural light.',
   },
@@ -13,12 +13,6 @@ const SERVICES = [
     body: 'Creating practical, manageable spaces without judgement — one shelf, one drawer, one room at a time.',
     image: '/images/organizing.png',
     alt: 'Neatly organized shelves with folded linens and a dusty rose basket.',
-  },
-  {
-    title: 'Fresh Start Cleaning',
-    body: 'Helping individuals and families facing major life transitions begin their next chapter with a little more ease.',
-    image: '/images/home-cleaning.png',
-    alt: 'A tidy, sunlit room offering a sense of a fresh beginning.',
   },
   {
     title: 'Community Support',
@@ -30,16 +24,16 @@ const SERVICES = [
 
 export function HowWeHelp() {
   return (
-    <section id="how-we-help" className="scroll-mt-28 px-4 py-20 sm:py-28">
+    <section id="how-we-help" className="scroll-mt-28 px-4 py-16 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-2xl text-center">
           <Eyebrow className="justify-center">How We Help</Eyebrow>
-          <h2 className="mt-5 text-balance font-serif text-4xl leading-[1.1] text-charcoal sm:text-5xl">
+          <h2 className="mt-5 text-balance font-serif text-3xl leading-[1.15] text-charcoal sm:text-5xl sm:leading-[1.1]">
             A little help can change everything.
           </h2>
         </div>
 
-        <div className="mt-16 flex flex-col gap-16 sm:gap-24">
+        <div className="mt-12 flex flex-col gap-14 sm:mt-16 sm:gap-24">
           {SERVICES.map((service, i) => (
             <div
               key={service.title}
@@ -65,7 +59,7 @@ export function HowWeHelp() {
                 <h3 className="font-serif text-2xl text-charcoal sm:text-3xl">
                   {service.title}
                 </h3>
-                <p className="mt-4 max-w-md text-lg leading-relaxed text-charcoal/75">
+                <p className="mt-4 max-w-md text-base leading-relaxed text-charcoal/75 sm:text-lg">
                   {service.body}
                 </p>
               </div>

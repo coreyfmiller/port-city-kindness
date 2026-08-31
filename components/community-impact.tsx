@@ -7,12 +7,12 @@ const STATS = [
 
 export function CommunityImpact() {
   return (
-    <section className="bg-cream px-4 py-20 sm:py-24">
+    <section className="bg-cream px-4 py-16 sm:py-24">
       <div className="mx-auto max-w-5xl text-center">
         <p className="font-script text-3xl text-rose sm:text-4xl">
           Small acts. Big impact.
         </p>
-        <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-charcoal/70">
+        <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-charcoal/70 sm:text-lg">
           Every home we help is a story of hope. As our community grows, so does
           the difference we can make together.
         </p>

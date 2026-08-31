@@ -21,16 +21,16 @@ const WAYS = [
 
 export function GetInvolved() {
   return (
-    <section id="get-involved" className="scroll-mt-28 px-4 py-20 sm:py-28">
+    <section id="get-involved" className="scroll-mt-28 px-4 py-16 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-2xl text-center">
           <Eyebrow className="justify-center">Get Involved</Eyebrow>
-          <h2 className="mt-5 text-balance font-serif text-4xl leading-[1.1] text-charcoal sm:text-5xl">
+          <h2 className="mt-5 text-balance font-serif text-3xl leading-[1.15] text-charcoal sm:text-5xl sm:leading-[1.1]">
             Kindness grows when people come together.
           </h2>
         </div>
 
-        <div className="mt-14 grid gap-8 sm:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:mt-14 sm:grid-cols-3 sm:gap-8">
           {WAYS.map((way) => (
             <div
               key={way.title}

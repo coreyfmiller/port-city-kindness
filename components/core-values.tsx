@@ -20,8 +20,8 @@ const VALUES = [
 
 export function CoreValues() {
   return (
-    <section className="bg-cream px-4 py-20 sm:py-24">
-      <div className="mx-auto grid max-w-5xl gap-12 sm:grid-cols-3 sm:gap-8">
+    <section className="bg-cream px-4 py-16 sm:py-24">
+      <div className="mx-auto grid max-w-5xl gap-10 sm:grid-cols-3 sm:gap-8">
         {VALUES.map((value) => (
           <div key={value.title} className="flex flex-col items-center text-center sm:px-4">
             <span className="flex size-14 items-center justify-center rounded-full border border-rose/25 bg-offwhite">

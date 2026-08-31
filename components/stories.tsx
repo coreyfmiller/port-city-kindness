@@ -20,16 +20,16 @@ const STORIES = [
 
 export function Stories() {
   return (
-    <section className="px-4 py-20 sm:py-28">
+    <section className="px-4 py-16 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-2xl text-center">
           <Eyebrow className="justify-center">Stories of Kindness</Eyebrow>
-          <h2 className="mt-5 text-balance font-serif text-4xl leading-[1.1] text-charcoal sm:text-5xl">
+          <h2 className="mt-5 text-balance font-serif text-3xl leading-[1.15] text-charcoal sm:text-5xl sm:leading-[1.1]">
             Kindness, in their words.
           </h2>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:mt-14 sm:grid-cols-3">
           {STORIES.map((story) => (
             <figure
               key={story.quote}

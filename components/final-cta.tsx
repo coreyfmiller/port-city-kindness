@@ -7,7 +7,7 @@ export function FinalCta() {
         <p className="font-script text-3xl text-primary-foreground/90 sm:text-4xl">
           Small acts. Big impact.
         </p>
-        <h2 className="mx-auto mt-4 max-w-2xl text-balance font-serif text-4xl leading-[1.1] text-primary-foreground sm:text-5xl">
+        <h2 className="mx-auto mt-4 max-w-2xl text-balance font-serif text-3xl leading-[1.15] text-primary-foreground sm:text-5xl sm:leading-[1.1]">
           Together, we can change lives.
         </h2>
 

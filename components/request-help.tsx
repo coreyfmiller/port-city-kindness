@@ -18,14 +18,14 @@ export function RequestHelp() {
   }
 
   return (
-    <section id="request-help" className="scroll-mt-28 px-4 py-20 sm:py-28">
-      <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16">
+    <section id="request-help" className="scroll-mt-28 px-4 py-16 sm:py-28">
+      <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16">
         <div className="lg:pt-4">
           <Eyebrow>Request Help</Eyebrow>
-          <h2 className="mt-5 text-balance font-serif text-4xl leading-[1.1] text-charcoal sm:text-5xl">
+          <h2 className="mt-5 text-balance font-serif text-3xl leading-[1.15] text-charcoal sm:text-5xl sm:leading-[1.1]">
             Need a little help?
           </h2>
-          <p className="mt-6 max-w-md text-lg leading-relaxed text-charcoal/75">
+          <p className="mt-6 max-w-md text-base leading-relaxed text-charcoal/75 sm:text-lg">
             Asking for help isn&apos;t always easy. If your home has become
             overwhelming, you don&apos;t need to explain or apologize. Tell us a
             little about your situation and we&apos;ll see how Port City Kindness

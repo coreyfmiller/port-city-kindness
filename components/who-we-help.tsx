@@ -10,12 +10,12 @@ const EXAMPLES = [
 
 export function WhoWeHelp() {
   return (
-    <section className="bg-cream px-4 py-20 sm:py-28">
+    <section className="bg-cream px-4 py-16 sm:py-28">
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="text-balance font-serif text-3xl leading-[1.15] text-charcoal sm:text-[2.75rem]">
           Everyone deserves to feel safe and comfortable in their own home.
         </h2>
-        <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-charcoal/75">
+        <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-charcoal/75 sm:text-lg">
           Port City Kindness may help people experiencing difficult
           circumstances who need a hand getting their home back under control.
           There is no situation too big or too small — and never any judgement.

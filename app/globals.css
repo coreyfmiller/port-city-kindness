@@ -1,0 +1,114 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Brand tokens */
+  --color-cream: var(--cream);
+  --color-offwhite: var(--offwhite);
+  --color-rose: var(--rose);
+  --color-blush: var(--blush);
+  --color-blush-pale: var(--blush-pale);
+  --color-charcoal: var(--charcoal);
+  --color-taupe: var(--taupe);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+  --font-script: var(--font-dancing), cursive;
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  color-scheme: light;
+
+  /* Raw brand palette */
+  --cream: #f8f1ea;
+  --offwhite: #fff9f4;
+  --rose: #c96f69;
+  --blush: #d98c84;
+  --blush-pale: #e9c1ba;
+  --charcoal: #171515;
+  --taupe: #a88f82;
+
+  --radius: 0.5rem;
+
+  --background: #fff9f4;
+  --foreground: #171515;
+  --card: #ffffff;
+  --card-foreground: #171515;
+  --popover: #ffffff;
+  --popover-foreground: #171515;
+  --primary: #c96f69;
+  --primary-foreground: #fff9f4;
+  --secondary: #f8f1ea;
+  --secondary-foreground: #171515;
+  --muted: #f8f1ea;
+  --muted-foreground: #6f5f57;
+  --accent: #e9c1ba;
+  --accent-foreground: #171515;
+  --destructive: #b4433d;
+  --border: #ecdfd6;
+  --input: #ecdfd6;
+  --ring: #c96f69;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background-color: var(--blush-pale);
+    color: var(--charcoal);
+  }
+}
+
+@layer utilities {
+  .animate-rise {
+    animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .animate-rise {
+      animation: none;
+    }
+  }
+}
